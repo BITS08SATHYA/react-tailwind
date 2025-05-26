@@ -2,17 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import DarkModeToggle from "./DarkModeToggle.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-   <div className="bg-gray-100 p-4">
-       <ul className='list-none md:flex md:gap-4'>
-           <li className="bg-blue-500 m-2 text-white p-2 rounded-lg md:px-4">Item 1</li>
-           <li className="bg-blue-500 m-2 text-white p-2 rounded-lg">Item 2</li>
-           <li className="bg-blue-500 m-2 text-white p-2 rounded-lg">Item 3</li>
-       </ul>
+   <div className="p-4 bg-white min-h-screen">
+        <DarkModeToggle />
+       <h1 className="text-2xl">Welcome to Dark App Mode</h1>
+       <p>This is an example of implementing dark mode using tailwind css in react projects.</p>
    </div>
   )
 }
